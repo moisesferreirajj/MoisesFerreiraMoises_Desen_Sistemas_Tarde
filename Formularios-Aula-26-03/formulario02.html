@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo Formulário</title>
+    <title>Exemplo Formulário #2</title>
 </head>
 <body>
-
+    
     <!-- DÚVIDAS SOBRE -->
     <font face="arial" size="1">
-    <h1>Teste de Formulário - Criando um Formulário:</h1>
+    <h1>Teste de Formulário #2 - Criando um Formulário:</h1>
     </font>
     <br>
 
     <!-- FORMÚLARIO -->
     <form action="#">
-        <label>Usuário:
-            <input name="usuario" placeholder="Digite seu usuário" required />
+        <label for="labelcep">Código Postal
+            <input name="cep" id="cep" placeholder="12345-123" required pattern="\d{5}-?\d{3}"/>
+            <!-- O comando PATTERN serve para utilizar o regex e validar a máscara enviada ao formulário. -->
         </label>
      <br>
-        <label>Senha:
-            <input type="password" name="senha" placeholder="Digite sua senha" required />
+        <label for="labeltel">Telefone
+            <input name="telefone" id="telefone" placeholder="12-12345-6789" required pattern="\d{2}\-\d{5}\-?\d{4}" />
+            <!-- O comando PATTERN serve para utilizar o regex e validar a máscara enviada ao formulário. -->
         </label>
      <br>
         <input type="submit" value="Enviar" />
-    </form>
-    
+    </form>    
     <!-- DÚVIDAS SOBRE -->
     <font face="arial" size="2">
      <h1>Qualquer dúvida ou comentário, você pode enviar um e-mail diretamente ao
