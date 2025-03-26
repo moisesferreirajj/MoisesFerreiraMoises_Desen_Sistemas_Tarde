@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Completo 01</title>
+    <style type="text/css">
+        label{
+            display: inline-block;
+            width: 150px;
+        }
+
+        input[type="text"]{
+            background-color: yellow;
+            font-weight: bold;
+            border-radius: 25px;
+            padding: 0px 20px;
+            height: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <!-- DÚVIDAS SOBRE -->
+    <font face="arial" size="1">
+    <h1>Criando um Formulário Completo:</h1>
+    </font>
+    <br>
+
+    <!-- FORMÚLARIO -->
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <label>Nome:</label>
+            <input name="nome" type="text" maxlength="40" size="40" placeholder="Digite seu nome" required />
+         <br><br>
+
+            <label>Senha:</label>
+            <input name="senha" type="password" maxlength="40" size="40" placeholder="Digite sua senha" required />
+         <br><br>
+
+            <label>Escolha os itens aplicaveis:</label>
+            <input name="video" type="checkbox">Placa de Vídeo
+            <input name="memoria" type="checkbox">Memória
+            <input name="som" type="checkbox">Caixa de som
+         <br><br>
+
+            <label>Gênero:</label>
+            <label><input name="genero" type="radio" value="M">Masculino</label>
+            <label><input name="genero" type="radio" value="F">Feminino</label>
+            <label><input name="genero" type="radio" value="O">Outros</label>
+         <br><br>
+
+            <label>Estado Civil:</label>
+            <label><input name="civil" type="radio" value="S">Solteiro</label>
+            <label><input name="civil" type="radio" value="C">Casado</label>
+            <label><input name="civil" type="radio" value="D">Divorciado</label>
+        <br><br>
+
+            <label>Estado - UF:</label>
+            <select name="estado">
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="ES">Espírito Santo</option>
+            </select>
+        <br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Frete:</legend>
+            <select name="frete">
+                <option value="0">PR - Frete Grátis</option>
+                <option value="20">SP - R$ 20,00</option>
+                <option value="15">SC - R$ 15,00</option>
+            </select>
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <label>Suco:</label>
+            <select>
+                <optgroup label="Frutas">
+                    <option>Laranja</option>
+                    <option>Abacaxi</option>
+                    <option>Morango</option>
+                </optgroup>
+
+                <optgroup label="Mistura">
+                    <option>Água</option>
+                    <option>Leite</option>
+                </optgroup>
+            </select>
+            <br><br>
+
+            <input type="submit" name="action" value="Enviar" />    
+            <input type="reset" name="action" value="Limpar" />    
+        </fieldset>
+    </form>
+
+    <!-- DÚVIDAS SOBRE -->
+    <font face="arial" size="2">
+     <h1>Qualquer dúvida ou comentário, você pode enviar um e-mail diretamente ao
+        <a href="mailto:moises_j_ferreira@estudante.sesisenai.org.br">Professor Moises</a>!
+     </h1>
+
+     <address>Moises João Ferreira | Estudante | moises_j_ferreira@estudante.sesisenai.org.br</address>    
+    </font>        
+
+</body>
+</html>
