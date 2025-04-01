@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataList</title>
+</head>
+<body>
+    <h1>Escolha um navegador</h1>
+
+    <form action="/action_page.php" method="get">
+        <input list="browsers" id="navegador" name="browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <input type="submit">
+    </form>
+
+    <p>
+        <strong>Nota:</strong>
+        Não é suportado no Safari 12.0
+    </p>
+
+    <br>
+    <address>Moises João Ferreira | Estudante | moises_j_ferreira@estudante.sesisenai.org.br</address>
+</body>
+</html>
