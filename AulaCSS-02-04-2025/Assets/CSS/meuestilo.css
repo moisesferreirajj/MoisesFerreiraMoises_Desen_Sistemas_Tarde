@@ -1,3 +1,7 @@
+body{
+    background: silver;
+}
+
 p {
     color: green;
     font-style: italic;
@@ -23,7 +27,6 @@ li {
 address{
     margin: 580px 0 0 0;
     color: black;
-    background-color: white;
     text-align: center;
     font-family: Arial;
     font-size: 15pt;
