@@ -1,0 +1,31 @@
+p {
+    color: green;
+    font-style: italic;
+}
+
+h3, h4 {
+    font-family: Arial;
+}
+
+h3 {
+    color: blue;
+}
+
+h4 {
+    color: yellow;
+}
+
+li {
+    font-size: 12px;
+}
+
+/* Anotar o NOME no HTML */
+address{
+    margin: 580px 0 0 0;
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-family: Arial;
+    font-size: 15pt;
+    font-weight: bold;
+}
