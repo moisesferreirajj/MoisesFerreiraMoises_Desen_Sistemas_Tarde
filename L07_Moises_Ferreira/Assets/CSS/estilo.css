@@ -1,11 +1,28 @@
+#cabecalho {
+    width: 100;
+    height: 150;
+    border: 1px solid black;
+    background-color: yellow;
+}
 
+#menu {
+    float: left;
+    min-height: 300px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: lightblue;
+}
 
-/* Anotar o NOME no HTML */
-address{
-    margin: 560px 0 0 0;
-    color: black;
+#conteudo {
+    min-height: 300px;
+    border: 1px solid black;
+    background-color: lightsalmon;
+}
+
+#rodape {
+    height: 50px;
+    border: 1px solid black;
+    background-color: darkgreen;
+    color: aliceblue;
     text-align: center;
-    font-family: Arial;
-    font-size: 15pt;
-    font-weight: bold;
 }
