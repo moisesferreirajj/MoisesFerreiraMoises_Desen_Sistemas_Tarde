@@ -1,0 +1,39 @@
+/* CENTRALIZA A CRIANÇA */
+.carousel-item {
+    margin-top: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 800px;
+    transition: transform 2s ease, opacity .3s ease-out;
+    opacity: 0.2;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+h5, p {
+    color: white !important;
+    background-color: black !important;
+    margin: 10px !important;
+    padding: 10px !important;
+}
+
+img {
+    width: 600px !important;
+    height: 600px !important;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* TEXTO DO BODY-SECONDARY, NO CASO O FOOTER BY MOISES */
+.text-body-secondary {
+    margin: 10px;
+    color: black !important;
+}

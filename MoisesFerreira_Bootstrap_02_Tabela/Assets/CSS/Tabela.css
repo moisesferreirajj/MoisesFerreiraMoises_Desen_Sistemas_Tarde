@@ -1,0 +1,20 @@
+/* CENTRALIZA A CRIANÇA */
+table {
+    margin-top: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 800px;
+}
+
+
+/* TEXTO DO BODY-SECONDARY, NO CASO O FOOTER BY MOISES */
+.text-body-secondary {
+    margin: 10px;
+    color: black !important;
+}
