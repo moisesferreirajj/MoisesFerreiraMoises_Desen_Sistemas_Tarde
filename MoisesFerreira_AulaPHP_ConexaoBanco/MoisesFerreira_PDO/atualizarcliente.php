@@ -3,13 +3,12 @@ require_once 'conexao.php';
 
 $conexao = conectarBanco();
 
-//Obtendo ID via GET
-$id_cliente = $_GET['id_cliente'] ?? null;
+// Obtendo ID via GET (ajuste conforme a URL usada: ?id=1)
+$idCliente = $_GET['id'] ?? null;
 $cliente = null;
 $msgErro = "";
 
 // Função local para buscar clientes por ID
-
 function buscarClientePorId($idCliente, $conexao) {
     $stmt = $conexao->prepare("SELECT * FROM cliente WHERE id_cliente = :id");
     $stmt->bindParam(':id', $idCliente, PDO::PARAM_INT);
@@ -17,17 +16,15 @@ function buscarClientePorId($idCliente, $conexao) {
     return $stmt->fetch();
 }
 
-if($idCliente && is_numeric($idCliente)) {
-    $cliente = buscarClientePorId($id_cliente, $conexao);
+if ($idCliente && is_numeric($idCliente)) {
+    $cliente = buscarClientePorId($idCliente, $conexao);
 
-    if ($cliente) {
-    $msgErro = "Erro: Cliente não encontrado.";
+    if (!$cliente) {
+        $msgErro = "Erro: Cliente não encontrado.";
     }
-}
-else {
+} else {
     $msgErro = "Digite o ID do cliente para buscar dados.";
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -50,8 +47,7 @@ else {
             <input type="number" id="id" name="id" required>
             <button type="submit">Buscar</button>
         </form>
-    <?php else: ?>
-<!-- Se o cliente for encontrado, exibe o formulário preenchido -->
+    <?php elseif ($cliente): ?>
         <h2>Atualizar Cliente</h2>
         <form action="processarAtualizacao.php" method="POST">
             <input type="hidden" name="id_cliente" value="<?= htmlspecialchars($cliente['id_cliente']) ?>">
