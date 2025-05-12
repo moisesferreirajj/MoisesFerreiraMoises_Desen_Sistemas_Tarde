@@ -7,8 +7,8 @@ driver = webdriver.Chrome()
 
 # Acessa a página de cadastro do cliente usando o caminho absoluto com o protocolo file://
 # Certifique-se de que o caminho está apontado para o HTML específico
+#driver.get("file:///C:/Users/moises_j_ferreira/Documents/GitHub/MoisesFerreiraMoises_Desen_Sistemas_Tarde/TesteDeSistemas_Alann/TesteDeSistemas_MoisesFerreira/index.html")
 driver.get("file:///C:/Users/moises_j_ferreira/Documents/GitHub/MoisesFerreiraMoises_Desen_Sistemas_Tarde/TesteDeSistemas_Alann/TesteDeSistemas_MoisesFerreira/index.html")
-
 # Aguarda o carregamento da página
 time.sleep(1)
 
