@@ -1,0 +1,5 @@
+Coloca isso no nome:
+
+' or 1=1 #
+
+brabao' or '1'='1
