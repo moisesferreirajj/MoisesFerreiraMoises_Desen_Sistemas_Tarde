@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f0f4f9 0%, #d9e7fa 100%);
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 40px;
+}
+
+form {
+    background: #fff;
+    max-width: 500px;
+    margin: 30px auto 20px auto;
+    padding: 30px 25px 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input[type="text"],
+form input[type="file"] {
+    padding: 10px;
+    border: 1px solid #bfc9d1;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #f8fafc;
+    transition: border 0.2s;
+}
+
+form input[type="text"]:focus,
+form input[type="file"]:focus {
+    border: 1.5px solid #2980b9;
+    outline: none;
+}
+
+form input[type="submit"] {
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+form input[type="submit"]:hover {
+    background: #1a5a8a;
+}
+
+table {
+    width: 90%;
+    margin: 30px auto 40px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px 10px;
+    text-align: center;
+}
+
+th {
+    background: #2980b9;
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+    background: #f4f8fb;
+}
+
+tr:hover {
+    background: #eaf1f8;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #1a5a8a;
+    text-decoration: underline;
+}
