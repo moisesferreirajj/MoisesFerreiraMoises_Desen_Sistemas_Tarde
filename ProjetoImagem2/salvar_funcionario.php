@@ -51,7 +51,7 @@ try {
         //EXECUTA A CONSULTA
         if ($stmt->execute()) {
             echo "Funcionário excluído com sucesso!";
-            header("Location: listar_imagens.php"); //REDIRECIONA PARA A PÁGINA DE LISTAGEM
+            header("Location: consulta_funcionario.php"); //REDIRECIONA PARA A PÁGINA DE LISTAGEM
             exit();
         } else {
             echo "Erro ao excluir funcionário.";
@@ -80,6 +80,8 @@ try {
             //EXECUTA A CONSULTA
             if ($stmt->execute()) {
                 echo "Funcionário cadastrado com sucesso!";
+                //BY MOISES, REDIRECIONAR PQ NGM MERECE VER ESSE ECHO
+                header("Location: consulta_funcionario.php"); //REDIRECIONA PARA A PÁGINA DE LISTAGEM
             } else {
                 echo "Erro ao cadastrar funcionário.";
             }

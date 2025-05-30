@@ -1,16 +1,142 @@
-/* Define estilos gerais para a página */
 body {
     font-family: Arial, sans-serif;
-    font-size: 18px; /* Aumenta o tamanho da fonte */
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh; /* Ocupa toda a altura da tela */
+    font-size: 18px;
+    min-height: 100vh;
     margin: 0;
-    background-color: #f4f4f4; /* Cor de fundo suave */
+    background: linear-gradient(120deg, #e3f0ff 0%, #b3d1fa 100%);
 }
 
-/* Estiliza o formulário */
+.container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(21, 101, 192, 0.13);
+    background: #fff;
+    padding: 36px 28px 28px 28px;
+    margin-bottom: 40px;
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 16px 48px rgba(21, 101, 192, 0.18);
+}
+
+/* Títulos mais destacados */
+h1, h2, h3, h4 {
+    color: #1565c0;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+
+.table-primary {
+    background: #1976d2 !important;
+    color: #fff;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f4f8fb;
+}
+
+.btn-info, .btn-info:visited {
+    background-color: #1976d2 !important;
+    border-color: #1976d2 !important;
+    color: #fff !important;
+}
+
+.btn-info:hover {
+    background-color: #1565c0 !important;
+    border-color: #1565c0 !important;
+}
+
+.btn-danger {
+    background-color: #e53935 !important;
+    border-color: #e53935 !important;
+    color: #fff !important;
+}
+
+.btn-danger:hover {
+    background-color: #b71c1c !important;
+    border-color: #b71c1c !important;
+}
+
+.navbar {
+    background: #1565c0 !important;
+}
+
+.navbar-brand, .nav-link, .dropdown-item {
+    color: #fff !important;
+}
+
+.dropdown-menu {
+    background: #1976d2;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background: #1565c0;
+    color: #fff;
+}
+
+.custom-navbar {
+    background: #1565c0;
+    padding: 12px 0;
+    margin-bottom: 32px;
+    box-shadow: 0 2px 8px rgba(21,101,192,0.07);
+}
+
+.custom-navbar .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    background: #1976d2;
+    color: #fff;
+    padding: 10px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background: #3d98ff;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: #1976d2;
+    min-width: 200px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 8px 16px rgba(21,101,192,0.10);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 18px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.2s;
+}
+.dropdown-content a:hover {
+    background: #3d98ff;
+}
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
 form {
     background: white;
     padding: 20px;
@@ -18,26 +144,25 @@ form {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espaço entre os elementos */
-    width: 300px;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-/* Estiliza os rótulos */
 label {
     font-weight: bold;
 }
 
-/* Estiliza os campos de entrada */
-input {
+input, select {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-/* Estiliza o botão */
-button {
-    background-color: #007bff;
+input[type="submit"], input[type="reset"], button {
+    background-color: #1976d2;
     color: white;
     padding: 10px;
     font-size: 18px;
@@ -47,22 +172,71 @@ button {
     transition: background 0.3s;
 }
 
-button:hover {
-    background-color: #0056b3;
+input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+    background-color: #1565c0;
 }
 
-h1{
-    font-family: Arial, sans-serif;
-    font-size: 35px; /* Aumenta o tamanho da fonte */
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #1565c0 60%, #1976d2 100%);
+    color: #fff;
+    text-align: center;
+    padding: 18px 0 12px 0;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    border-top: 2px solid #1976d2;
+    z-index: 100;
+    box-shadow: 0 -2px 12px rgba(21,101,192,0.10);
 }
 
-h2{
-    font-family: Arial, sans-serif;
-    font-size: 20px; /* Aumenta o tamanho da fonte */
+.img-funcionario, .img-fluid.rounded.shadow {
+    border-radius: 14px !important;
+    box-shadow: 0 4px 18px rgba(21, 101, 192, 0.13) !important;
+    border: 3px solid #1976d2;
+    background: #f4f8fb;
+    padding: 8px;
+    max-width: 220px;
+    max-height: 320px;
+    object-fit: cover;
+    margin-bottom: 18px;
+}
+
+.btn {
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(21,101,192,0.07);
+}
+
+.btn-secondary {
+    background: #e3eafc !important;
+    color: #1565c0 !important;
+    border: 1px solid #b3d1fa !important;
+}
+.btn-secondary:hover {
+    background: #b3d1fa !important;
+    color: #1565c0 !important;
+}
+
+.d-flex.gap-3 {
+    gap: 1.5rem !important;
+}
+
+.container {
+    padding-bottom: 100px;
+}
+
+.container-navbar {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    align-items: center;
+    justify-content: space-between;
 }
