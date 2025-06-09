@@ -1,2 +1,15 @@
-*.css linguist-documentation
-*.html linguist-documentation
+* text=auto eol=lf
+
+*.blade.php diff=php
+*.blade diff=php
+*.css diff=php
+*.html diff=html
+*.md diff=markdown
+*.php diff=php
+*.blade.php linguist-language=php
+*.blade linguist-language=php
+*.css linguist-language=php
+
+/.github export-ignore
+CHANGELOG.md export-ignore
+.styleci.yml export-ignore
