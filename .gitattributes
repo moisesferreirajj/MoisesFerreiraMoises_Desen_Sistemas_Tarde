@@ -1,16 +1,17 @@
 * text=auto eol=lf
 
-*.html
-*.blade.php diff=php
-*.blade diff=php
-*.css diff=php
-*.html diff=php
-*.md diff=php
+# PHP and Blade
 *.php diff=php
-*.blade.php linguist-language=php
-*.blade linguist-language=php
+*.blade.php diff=php linguist-language=php
+*.blade diff=php linguist-language=php
+
+# CSS
 *.css linguist-language=php
 
+# Markdown
+*.md diff=php
+
+# GitHub e arquivos ignorados na exportação
 /.github export-ignore
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore
