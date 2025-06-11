@@ -4,6 +4,8 @@
 *.php diff=php
 *.blade.php diff=php linguist-language=php
 *.blade diff=php linguist-language=php
+*.css linguist-documentation
+*.html linguist-documentation
 
 # CSS
 *.css linguist-language=php
